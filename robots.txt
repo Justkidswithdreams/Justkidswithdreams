@@ -1,0 +1,6 @@
+# Vor dem offiziellen Start: Suchmaschinen aussperren.
+# Zum Go-live ersetzen durch:
+#   User-agent: *
+#   Allow: /
+User-agent: *
+Disallow: /

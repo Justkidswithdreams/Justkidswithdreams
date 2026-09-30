@@ -1,0 +1,7 @@
+Die Schriften in diesem Ordner stehen unter der SIL Open Font License, Version 1.1.
+Volltext der Lizenz: https://openfontlicense.org/open-font-license-official-text/
+
+Poppins  – Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
+Lora     – Copyright 2011 The Lora Project Authors (https://github.com/cyrealtype/Lora-Cyrillic)
+
+Die Dateien sind auf lateinische Zeichen reduziert (Subset) und ins WOFF2-Format umgewandelt.
