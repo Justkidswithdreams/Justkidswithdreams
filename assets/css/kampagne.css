@@ -84,9 +84,9 @@
 .ablauf p{color:var(--muted);font-size:.95rem}
 
 /* Logo-Galerie */
-.galerie{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:16px;margin-top:32px}
+.galerie{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-top:32px}
 .galerie figure{margin:0;padding:14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-s);text-align:center}
-.galerie .logo-box{height:96px}
+.galerie .logo-box{height:112px}
 .galerie figcaption{margin-top:10px;font-size:.86rem;color:var(--muted)}
 .galerie .frei{display:flex;align-items:center;justify-content:center;min-height:150px;border-style:dashed;border-color:#C9A24A}
 .galerie .frei a{font-family:var(--head);font-weight:600}
@@ -106,7 +106,9 @@
   .eck div{padding:12px 10px}
   .eck span{font-size:.8rem}
   .team .ph{max-width:240px}
-  .galerie .logo-box{height:80px}
+  .galerie{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .galerie .logo-box{height:88px}
+  .galerie .logo-img img{max-height:52px}
   .ablauf{grid-template-columns:minmax(0,1fr)}
   .rechner,.progress{padding:22px}
   .ktab{font-size:.92rem}
@@ -124,3 +126,10 @@
   .ph.has-img img[data-k="15"]{object-position:66% 50%}
   .ph.has-img img[data-k="14"]{object-position:46% 50%}
 }
+
+/* Fließtext-Abschnitt */
+.prosa{margin-top:28px;max-width:64ch}
+.prosa p{font-size:1.08rem;line-height:1.7;color:var(--text)}
+.prosa p+p{margin-top:1.1em}
+.galerie .logo-img{display:flex;align-items:center;justify-content:center}
+.galerie .logo-img img{max-height:72px;max-width:100%;width:auto;height:auto}
