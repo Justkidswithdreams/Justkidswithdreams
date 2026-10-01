@@ -43,7 +43,7 @@
   // Spenden-Widget
   var rhythm='einmalig', amt=50, free=document.getElementById('d-free'), sum=document.getElementById('d-sum');
   if(free){
-  function upd(){var v=free.value?Math.max(0,parseInt(free.value,10)||0):amt; sum.textContent=v?'Du möchtest '+v+' € '+rhythm+' spenden.':'Bitte wähle einen Betrag.';}
+  function upd(){var v=free.value?Math.max(0,parseInt(free.value,10)||0):amt; sum.textContent=v?'Du möchtest '+v.toLocaleString('de-DE')+' € '+rhythm+' spenden.':'Bitte wähle einen Betrag.';}
   document.querySelectorAll('[data-rhythm]').forEach(function(b){b.addEventListener('click',function(){rhythm=b.dataset.rhythm;document.querySelectorAll('[data-rhythm]').forEach(function(x){x.setAttribute('aria-pressed',x===b);});upd();});});
   document.querySelectorAll('[data-amt]').forEach(function(b){b.addEventListener('click',function(){amt=+b.dataset.amt;free.value='';document.querySelectorAll('[data-amt]').forEach(function(x){x.setAttribute('aria-pressed',x===b);});upd();});});
   free.addEventListener('input',function(){if(free.value)document.querySelectorAll('[data-amt]').forEach(function(x){x.setAttribute('aria-pressed','false');});upd();});

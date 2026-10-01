@@ -477,3 +477,11 @@ p+p,p+ul,ul+p{margin-top:.9em}
 .legal h1{margin-top:0}
 
 .page{display:block}
+
+/* Dark Mode: dunkle Buttons auf dunklem Grund hell darstellen, auf Gold- und Hellflächen dunkel lassen */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .btn-dark{background:#F5F2EE;color:#302E2C}
+  :root:not([data-theme="light"]) :is(.fbox.gold,.cta-band,.news,.way.gold) .btn-dark{background:#302E2C;color:#fff}
+}
+:root[data-theme="dark"] .btn-dark{background:#F5F2EE;color:#302E2C}
+:root[data-theme="dark"] :is(.fbox.gold,.cta-band,.news,.way.gold) .btn-dark{background:#302E2C;color:#fff}

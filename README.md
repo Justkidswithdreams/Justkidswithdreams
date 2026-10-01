@@ -17,6 +17,8 @@ jugendaemter.html        Für Jugendämter
 spenden.html             Spenden
 unternehmen.html         Für Unternehmen
 impact-partner.html      Impact-Partner
+wohngruppe-1.html        Kampagne Wohngruppe 1: Einkaufsliste, Spenden, Förderpartner (Link im Footer)
+partner-wohngruppe-1.html  Investoren Wohngruppe 1 (noindex, nicht verlinkt, nur persönlich weitergeben)
 ehrenamt.html            Zeit spenden
 partner.html             Partner & Netzwerk
 transparenz.html         Transparenz
@@ -26,6 +28,7 @@ impressum.html           Impressum (Platzhalter)
 datenschutz.html         Datenschutz (Platzhalter)
 barrierefreiheit.html    Barrierefreiheit
 assets/css/style.css     Gestaltung nach JKWD Corporate Design v2.0
+assets/css/kampagne.css  Zusatz für die beiden Wohngruppe-1-Seiten
 assets/js/main.js        Menü, Dropdown, Akkordeons, Formulare, Spenden-Widget
 assets/img/              Symbolbilder (WebP), Link-Vorschau, App-Icon
 assets/logos/            JKWD-Logos, Der Paritätische, Partnerlogos
@@ -51,9 +54,10 @@ python3 -m http.server 8000
 - [ ] Adresse, E-Mail und Telefon in `kontakt.html` und im Footer aller Seiten eintragen
 - [ ] Spendenkonto in `spenden.html` einbinden, sobald eingerichtet
 - [ ] Formulare und Newsletter an einen Versanddienst anbinden (derzeit nur Bestätigungstext)
+- [ ] Wohngruppe 1: Spendenstand (`IST`) und Finanzierungsstand (`FINANZIERT`, `INVESTOREN`) im Script der jeweiligen Seite pflegen, Planwerte der Mittelverwendung eintragen
 - [ ] `og:image` in allen Seiten auf die absolute Adresse setzen, z. B. `https://www.DOMAIN.de/assets/img/13_link-vorschau-1200x630.jpg`
 - [ ] `robots.txt` auf `Allow: /` umstellen (derzeit sind Suchmaschinen ausgesperrt)
-- [ ] Freigaben: Impact-Partner-Seite (René), Partnernennungen und Logos (schriftlich abgelegt), Paritätischer-Mitgliedslogo NRW
+- [ ] Freigaben: Investorenseite partner-wohngruppe-1.html (René: Darlehensnehmerin, Zinsstaffel, Risikohinweis), Impact-Partner-Seite (René), Partnernennungen und Logos (schriftlich abgelegt), Paritätischer-Mitgliedslogo NRW
 - [ ] Beispielbeträge auf der Spendenseite und Stellenangebote final abstimmen
 
 ## Hinweise
