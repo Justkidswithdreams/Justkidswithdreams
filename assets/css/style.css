@@ -485,3 +485,14 @@ p+p,p+ul,ul+p{margin-top:.9em}
 }
 :root[data-theme="dark"] .btn-dark{background:#F5F2EE;color:#302E2C}
 :root[data-theme="dark"] :is(.fbox.gold,.cta-band,.news,.way.gold) .btn-dark{background:#302E2C;color:#fff}
+
+/* Rechtstexte */
+.legal ul{color:var(--muted);padding-left:1.2em;margin:8px 0 12px}
+.legal li{margin-bottom:6px}
+.legal p+p{margin-top:10px}
+.legal a{text-decoration:underline;text-underline-offset:3px}
+.legal .stand{margin-top:40px;font-size:.9rem}
+.fbox .rolle{font-family:var(--head);font-weight:600;color:var(--text);margin:-4px 0 10px}
+.fbox .btn{margin-top:18px}
+.foot-contact{margin-top:10px}
+.legal h1{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}

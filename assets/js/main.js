@@ -23,20 +23,23 @@
     b.addEventListener('click',function(){var li=b.parentElement,o=!li.classList.contains('open');li.classList.toggle('open',o);b.setAttribute('aria-expanded',o);});
   });
 
-  // Newsletter
-  var nb=document.getElementById('news-btn'), nm=document.getElementById('news-msg'), mi=document.getElementById('mail');
-  if(nb) nb.addEventListener('click',function(){
-    if(!mi.value||!mi.checkValidity()){nm.textContent='Bitte gib eine gültige E-Mail-Adresse ein.';mi.focus();return;}
-    nm.textContent='Danke! Die Anmeldung wird beim Umsetzen mit dem Newsletter-Tool verbunden.';
-  });
-
   // Formulare
   document.querySelectorAll('[data-form]').forEach(function(f){
     var btn=f.querySelector('[data-send]'), msg=f.querySelector('.form-msg');
     btn.addEventListener('click',function(){
       var bad=[].slice.call(f.querySelectorAll('input,textarea,select')).filter(function(i){return !i.checkValidity();})[0];
       if(bad){msg.classList.add('err');msg.textContent=bad.type==='checkbox'?'Bitte bestätige die Einwilligung zur Verarbeitung deiner Angaben.':(bad.type==='email'&&bad.value?'Bitte gib eine gültige E-Mail-Adresse ein.':'Bitte fülle alle Pflichtfelder aus.');bad.focus();return;}
-      msg.classList.remove('err');msg.textContent='Danke! Das Formular wird beim Umsetzen mit dem Mail-Versand verbunden.';
+      msg.classList.remove('err');
+      // Nachricht für WhatsApp zusammenstellen
+      var zeilen=[(document.title.split(' · ')[0])+' (Website justkidswithdreams.com)'];
+      [].slice.call(f.querySelectorAll('input,textarea,select')).forEach(function(i){
+        if(i.type==='checkbox'||i.type==='file'||!i.value) return;
+        var l=f.querySelector('label[for="'+i.id+'"]'); zeilen.push((l?l.textContent.trim():i.name)+': '+i.value.trim());
+      });
+      window.open('https://wa.me/491789176594?text='+encodeURIComponent(zeilen.join('\n')),'_blank','noopener');
+      msg.textContent=f.hasAttribute('data-sie')
+        ?'WhatsApp wurde geöffnet. Bitte senden Sie die vorbereitete Nachricht dort ab. Alternativ erreichen Sie uns telefonisch unter +49 178 9176594.'
+        :'WhatsApp wurde geöffnet. Bitte sende die vorbereitete Nachricht dort ab. Alternativ erreichst du uns telefonisch unter +49 178 9176594.';
     });
   });
 

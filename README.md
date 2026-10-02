@@ -24,7 +24,7 @@ partner.html             Partner & Netzwerk
 transparenz.html         Transparenz
 faq.html                 Häufige Fragen
 kontakt.html             Kontakt
-impressum.html           Impressum (Platzhalter)
+impressum.html           Impressum
 datenschutz.html         Datenschutz (Platzhalter)
 barrierefreiheit.html    Barrierefreiheit
 assets/css/style.css     Gestaltung nach JKWD Corporate Design v2.0
@@ -50,14 +50,16 @@ python3 -m http.server 8000
 
 ## Vor dem Go-live erledigen
 
-- [ ] Impressum und Datenschutzerklärung einfügen (Impressumspflicht nach § 5 DDG, erst nach Eintragung der gUG)
-- [ ] Adresse, E-Mail und Telefon in `kontakt.html` und im Footer aller Seiten eintragen
-- [ ] Spendenkonto in `spenden.html` einbinden, sobald eingerichtet
-- [ ] Formulare und Newsletter an einen Versanddienst anbinden (derzeit nur Bestätigungstext)
-- [ ] Wohngruppe 1: Spendenstand (`IST`) und Finanzierungsstand (`FINANZIERT`, `INVESTOREN`) im Script der jeweiligen Seite pflegen, Planwerte der Mittelverwendung eintragen
+- [x] Impressum und Datenschutzerklärung eingefügt (Stand Oktober 2026)
+- [ ] E-Mail-Adresse im Impressum und in der Datenschutzerklärung eintragen (Pflichtangabe, Stelle im Code mit „E-MAIL EINTRAGEN“ markiert)
+- [ ] Handelsregisternummer im Impressum eintragen (markiert mit „HRB-NUMMER EINTRAGEN“)
+- [ ] Spendenkonto (IBAN) in `spenden.html` und `wohngruppe-1.html` ergänzen, sobald eingerichtet
+- [ ] Formulare senden derzeit per WhatsApp; später optional an einen E-Mail-Versand anbinden
+- [ ] Wohngruppe 1: Spendenstand (`IST`) und Finanzierungsstand (`FINANZIERT`, `INVESTOREN`) im Script der jeweiligen Seite pflegen
 - [ ] `og:image` in allen Seiten auf die absolute Adresse setzen, z. B. `https://www.DOMAIN.de/assets/img/13_link-vorschau-1200x630.jpg`
 - [ ] `robots.txt` auf `Allow: /` umstellen (derzeit sind Suchmaschinen ausgesperrt)
-- [ ] Freigaben: Investorenseite partner-wohngruppe-1.html (René: Darlehensnehmerin, Zinsstaffel, Risikohinweis), Impact-Partner-Seite (René), Partnernennungen und Logos (schriftlich abgelegt), Paritätischer-Mitgliedslogo NRW
+- [x] Investorenseite rechtlich geprüft (Zinsstaffel 5/6/7 %)
+- [ ] Freigaben: Partnernennungen und Logos (schriftlich abgelegt), Paritätischer-Mitgliedslogo NRW
 - [ ] Beispielbeträge auf der Spendenseite und Stellenangebote final abstimmen
 
 ## Hinweise
